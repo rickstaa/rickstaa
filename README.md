@@ -5,4 +5,4 @@
 I'm a Robotics master student thats very passionate about solving complicated problems and creating software solutions :robot:. I :heart: Open Source and therefore take great pleasure out of working on interesting opensource projects.
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rickstaa&layout=compact&langs_count=10)
-![Rick's github stats](https://github-readme-stats.vercel.app/api?username=rickstaa&show_icons=true&count_private=true&line_height=25)
+![Rick's github stats](https://github-readme-stats.vercel.app/api?username=rickstaa&show_icons=true&count_private=true&line_height=35)
