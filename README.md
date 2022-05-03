@@ -23,3 +23,9 @@ I'm a Robotics master student thats very passionate about solving complicated pr
   <img height=200 src="https://github-readme-stats-git-master-rstaa-rickstaa.vercel.app/api?username=rickstaa&show_icons=true&count_private=true&line_height=28&hide_border=1&include_all_commits=true&card_width=450&role=OWNER,COLLABORATOR&exclude_repo=github-readme-stats&theme=dark#gh-dark-mode-only" alt="Rick Staa's Github stats" />
 </a>
 </div>
+
+<br>
+
+<a href="https://discord.gg/UGhwv2bS7a">
+<img src="https://img.shields.io/discord/700321498023329813?style=for-the-badge&logo=discord&labelColor=000&color=FFF" alt="Ask me anything">
+</a>
