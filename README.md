@@ -26,6 +26,6 @@ I'm a Robotics master student thats very passionate about solving complicated pr
 
 <br>
 
-<a href="https://discord.gg/UGhwv2bS7a">
+<a href="https://discord.gg/HXmCeSH8jr">
 <img src="https://img.shields.io/discord/700321498023329813?style=for-the-badge&logo=discord&labelColor=000&color=FFF" alt="Ask me anything">
 </a>
