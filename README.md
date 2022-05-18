@@ -36,9 +36,7 @@ I'm a Robotics master student thats very passionate about solving complicated pr
 <a href="https://discord.gg/HXmCeSH8jr#gh-dark-mode-only">
 <img src="https://img.shields.io/discord/700321498023329813?style=for-the-badge&logo=discord&labelColor=000&color=FFF#gh-dark-mode-only" alt="Ask me anything">
 </a>
-  
 &nbsp;
-
 <!-- Social button 2 -->
 <!-- Light Mode -->
 <a href="https://twitter.com/intent/follow?screen_name=rick_staa#gh-light-mode-only">
