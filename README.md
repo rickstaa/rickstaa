@@ -14,18 +14,6 @@ I'm a Robotics master student thats very passionate about solving complicated pr
 </a>
 </div>
 
-<br>
-
-<div>
-<a href="https://discord.gg/HXmCeSH8jr#gh-light-mode-only">
-<img src="https://img.shields.io/discord/700321498023329813?style=for-the-badge&logo=discord&labelColor=000&color=3572A5#gh-light-mode-only" alt="Ask me anything">
-</a>
-&nbsp;
-<a href="https://twitter.com/intent/follow?screen_name=rick_staa#gh-light-mode-only">
-<img src="https://img.shields.io/twitter/follow/rick_staa?style=for-the-badge&logo=twitter&labelColor=000&color=3572A5#gh-light-mode-only" alt="Follow me on twitter" >
-</a>
-</div>
-
 <!-- Dark Mode -->
 <div align="center"> 
 <a href="https://github.com/rickstaa#gh-dark-mode-only">
@@ -38,6 +26,18 @@ I'm a Robotics master student thats very passionate about solving complicated pr
 
 <br>
 
+<!-- Light Mode -->
+<div>
+<a href="https://discord.gg/HXmCeSH8jr#gh-light-mode-only">
+<img src="https://img.shields.io/discord/700321498023329813?style=for-the-badge&logo=discord&labelColor=000&color=3572A5#gh-light-mode-only" alt="Ask me anything">
+</a>
+&nbsp;
+<a href="https://twitter.com/intent/follow?screen_name=rick_staa#gh-light-mode-only">
+<img src="https://img.shields.io/twitter/follow/rick_staa?style=for-the-badge&logo=twitter&labelColor=000&color=3572A5#gh-light-mode-only" alt="Follow me on twitter" >
+</a>
+</div>
+
+<!-- Dark Mode -->
 <div>
 <a href="https://discord.gg/HXmCeSH8jr#gh-dark-mode-only">
 <img src="https://img.shields.io/discord/700321498023329813?style=for-the-badge&logo=discord&labelColor=000&color=FFF#gh-dark-mode-only" alt="Ask me anything">
