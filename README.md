@@ -24,8 +24,6 @@ I'm a Robotics master student thats very passionate about solving complicated pr
 </a>
 </div>
 
-<br>
-
 <!-- Light Mode -->
 <div>
 <a href="https://discord.gg/HXmCeSH8jr#gh-light-mode-only">
