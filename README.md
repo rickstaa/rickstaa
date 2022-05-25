@@ -46,4 +46,14 @@ I'm a Robotics master student thats very passionate about solving complicated pr
 <a href="https://twitter.com/intent/follow?screen_name=rick_staa#gh-dark-mode-only">
 <img src="https://img.shields.io/twitter/follow/rick_staa?style=for-the-badge&logo=twitter&labelColor=000&color=FFF#gh-dark-mode-only" alt="Follow me on twitter" >
 </a>
+&nbsp;
+<!-- Social button 3 -->
+<!-- Light Mode -->
+<a href="https://www.linkedin.com/in/rickstaa#gh-light-mode-only">
+<img src="https://img.shields.io/badge/LinkedIn-ffffff?style=for-the-badge&logo=linkedin&logoColor=black#gh-light-mode-only" alt="Connect with me on linkedin" >
+</a>
+<!-- Dark Mode -->
+<a href="https://www.linkedin.com/in/rickstaa#gh-dark-mode-only">
+<img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white#gh-dark-mode-only" alt="Connect with me on linkedin" >
+</a>
 </div>
