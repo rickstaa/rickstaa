@@ -49,16 +49,6 @@ I'm a Robotics master student thats very passionate about solving complicated pr
 &nbsp;
 <!-- Social button 3 -->
 <!-- Light Mode -->
-<a href="https://stackshare.io/rickstaa/my-stack#gh-light-mode-only">
-<img src="https://img.shields.io/badge/tech-stack-0690fa.svg?style=for-the-badge&logo=stackshare&labelColor=000&color=3572A5#gh-light-mode-only" alt="Checkout my development stack" >
-</a>
-<!-- Dark Mode -->
-<a href="https://stackshare.io/rickstaa/my-stack#gh-dark-mode-only">
-<img src="https://img.shields.io/badge/tech-stack-0690fa.svg?style=for-the-badge&logo=stackshare&labelColor=000&color=FFF#gh-dark-mode-only" alt="Checkout my development stack" >
-</a>
-&nbsp;
-<!-- Social button 4 -->
-<!-- Light Mode -->
 <a href="https://www.linkedin.com/in/rickstaa#gh-light-mode-only">
 <img src="https://img.shields.io/badge/LinkedIn-3572A5?style=for-the-badge&logo=linkedin&logoColor=white#gh-light-mode-only" alt="Connect with me on linkedin" >
 </a>
