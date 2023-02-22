@@ -2,42 +2,77 @@ name: GitHub Readme Stats
 on:
   workflow_dispatch:
   schedule:
-  - cron: '0 * * * *'
+  - cron: 0 */4 * * *  # Change to make the action run more or less frequently. Please be aware that GitHub's free plan only has 2000 CI minutes.
 jobs:
-  stats:
+  stats-light:
     permissions: write-all
     runs-on: ubuntu-latest
-    name: Stats Card
+    name: Stats Card (light mode)
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Generate Stats
+      - name: Generate Stats (light mode)
         uses: Zo-Bro-23/grs-action@main
         id: generate
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          options: 'username=${{ github.repository_owner }}'
+          options: 'username=${{ github.repository_owner }}&show_icons=true&count_private=true&line_height=28&hide_border=true&card_width=450&include_all_commits=true&role=owner,collaborator&exclude_repo=github-readme-stats&theme=default'
       - uses: actions/upload-artifact@master
         with:
-          name: stats
+          name: stats-light
           path: grs
-  top-langs:
+  stats-dark:
     permissions: write-all
     runs-on: ubuntu-latest
-    name: Top Languages Card
+    name: Stats Card (dark mode)
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Generate Top Languages
+      - name: Generate Stats (mode dark)
         uses: Zo-Bro-23/grs-action@main
         id: generate
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          options: 'username=${{ github.repository_owner }}'
+          options: 'username=${{ github.repository_owner }}&show_icons=true&count_private=true&line_height=28&hide_border=true&card_width=450&include_all_commits=true&role=owner,collaborator&exclude_repo=github-readme-stats&theme=dark'
+      - uses: actions/upload-artifact@master
+        with:
+          name: stats-dark
+          path: grs
+  top-langs-light:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    name: Top Languages Card (light mode)
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Generate Top Languages (light mode)
+        uses: Zo-Bro-23/grs-action@main
+        id: generate
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&role=owner,collaborator&theme=default'
           card: 'top-langs'
       - uses: actions/upload-artifact@master
         with:
-          name: top-langs
+          name: top-langs-light
+          path: grs
+  top-langs-dark:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    name: Top Languages Card (dark mode)
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Generate Top Languages (dark mode)
+        uses: Zo-Bro-23/grs-action@main
+        id: generate
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&role=owner,collaborator&theme=dark&bg_color=000000'
+          card: 'top-langs'
+      - uses: actions/upload-artifact@master
+        with:
+          name: top-langs-dark
           path: grs
   push:
     permissions: write-all
@@ -47,11 +82,19 @@ jobs:
     steps:
       - uses: actions/download-artifact@master
         with:
-          name: stats
+          name: stats-light
           path: grs
       - uses: actions/download-artifact@master
         with:
-          name: top-langs
+          name: top-langs-light
+          path: grs
+      - uses: actions/download-artifact@master
+        with:
+          name: stats-dark
+          path: grs
+      - uses: actions/download-artifact@master
+        with:
+          name: top-langs-dark
           path: grs
       - name: Push
         uses: crazy-max/ghaction-github-pages@v3
