@@ -59,4 +59,24 @@ I'm a Robotics master student thats very passionate about solving complicated pr
 
 </div>
 
+## GRS action test
+
+<!-- Light Mode -->
+<div align="center"> 
+<a href="https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only">
+<img height=200 src="https://github.com/rickstaa/rickstaa/raw/grs/top-langs.svg#gh-light-mode-only" alt="Rick Staa's Language stats" />
+</a>
+<a href="https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only">
+<img height=200 src="https://github.com/rickstaa/rickstaa/raw/grs/stats.svg#gh-light-mode-only" alt="Rick Staa's Github stats" />
+</a>
+</div>
+<!-- Dark Mode -->
+<div align="center"> 
+<a href="https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only">
+<img height=200 src="https://github.com/rickstaa/rickstaa/raw/grs/top-langs.svg#gh-dark-mode-only" alt="Rick Staa's Language stats" />
+</a>
+<a href="https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only">
+<img height=200 src="https://github.com/rickstaa/rickstaa/raw/grs/stats.svg#gh-dark-mode-only" alt="Rick Staa's Github stats" />
+</a>
+</div>
 
