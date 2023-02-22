@@ -1,0 +1,62 @@
+name: GitHub Readme Stats
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: */1 * * * *
+jobs:
+  stats:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    name: Stats Card
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Generate Stats
+        uses: Zo-Bro-23/grs-action@v1
+        id: generate
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          options: 'username=${{ github.repository_owner }}'
+      - uses: actions/upload-artifact@master
+        with:
+          name: stats
+          path: grs
+  top-langs:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    name: Top Languages Card
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Generate Top Languages
+        uses: Zo-Bro-23/grs-action@v1
+        id: generate
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          options: 'username=${{ github.repository_owner }}'
+          card: 'top-langs'
+      - uses: actions/upload-artifact@master
+        with:
+          name: top-langs
+          path: grs
+  push:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    name: Push
+    needs: [stats, top-langs]
+    steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: stats
+          path: grs
+      - uses: actions/download-artifact@master
+        with:
+          name: top-langs
+          path: grs
+      - name: Push
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: grs
+          build_dir: grs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
