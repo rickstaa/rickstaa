@@ -78,7 +78,7 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
     name: Push
-    needs: [stats, top-langs]
+    needs: [stats-light, stats-dark, top-langs-light, top-langs-dark]
     steps:
       - uses: actions/download-artifact@master
         with:
