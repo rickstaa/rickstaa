@@ -21,7 +21,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: stats-light
-          path: grs
+          path: stats-light.svg
   stats-dark:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -39,7 +39,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: stats-dark
-          path: grs
+          path: stats-dark.svg
   top-langs-light:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -58,7 +58,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: top-langs-light
-          path: grs
+          path: top-langs-light.svg
   top-langs-dark:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -77,7 +77,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: top-langs-dark
-          path: grs
+          path: top-langs-dark.svg
   push:
     permissions: write-all
     runs-on: ubuntu-latest
