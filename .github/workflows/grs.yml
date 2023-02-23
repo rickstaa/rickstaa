@@ -17,11 +17,11 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           options: 'username=${{ github.repository_owner }}&show_icons=true&count_private=true&line_height=28&hide_border=true&card_width=450&include_all_commits=true&role=owner,collaborator&exclude_repo=github-readme-stats&theme=default'
-          path: stats-light.svg
+          path: grs
       - uses: actions/upload-artifact@master
         with:
           name: stats-light
-          path: stats-light.svg
+          path: grs
   stats-dark:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -39,7 +39,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: stats-dark
-          path: stats-dark.svg
+          path: grs
   top-langs-light:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -58,7 +58,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: top-langs-light
-          path: top-langs-light.svg
+          path: grs
   top-langs-dark:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -77,7 +77,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: top-langs-dark
-          path: top-langs-dark.svg
+          path: grs
   push:
     permissions: write-all
     runs-on: ubuntu-latest
