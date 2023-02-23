@@ -17,11 +17,11 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           options: 'username=${{ github.repository_owner }}&show_icons=true&count_private=true&line_height=28&hide_border=true&card_width=450&include_all_commits=true&role=owner,collaborator&exclude_repo=github-readme-stats&theme=default'
-          path: grs
+          path: stats-light.svg
       - uses: actions/upload-artifact@master
         with:
           name: stats-light
-          path: grs
+          path: stats-light.svg
   stats-dark:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -35,11 +35,11 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           options: 'username=${{ github.repository_owner }}&show_icons=true&count_private=true&line_height=28&hide_border=true&card_width=450&include_all_commits=true&role=owner,collaborator&exclude_repo=github-readme-stats&theme=dark'
-          path: grs
+          path: stats-dark.svg
       - uses: actions/upload-artifact@master
         with:
           name: stats-dark
-          path: grs
+          path: stats-dark.svg
   top-langs-light:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -54,11 +54,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&role=owner,collaborator&theme=default'
           card: 'top-langs'
-          path: grs
+          path: top-langs-light.svg
       - uses: actions/upload-artifact@master
         with:
           name: top-langs-light
-          path: grs
+          path: top-langs-light.svg
   top-langs-dark:
     permissions: write-all
     runs-on: ubuntu-latest
@@ -73,11 +73,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&role=owner,collaborator&theme=dark&bg_color=000000'
           card: 'top-langs'
-          path: grs
+          path: top-langs-dark.svg
       - uses: actions/upload-artifact@master
         with:
           name: top-langs-dark
-          path: grs
+          path: top-langs-dark.svg
   push:
     permissions: write-all
     runs-on: ubuntu-latest
