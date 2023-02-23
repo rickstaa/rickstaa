@@ -17,6 +17,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           options: 'username=${{ github.repository_owner }}&show_icons=true&count_private=true&line_height=28&hide_border=true&card_width=450&include_all_commits=true&role=owner,collaborator&exclude_repo=github-readme-stats&theme=default'
+          path: stats-light
       - uses: actions/upload-artifact@master
         with:
           name: stats-light
@@ -34,6 +35,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           options: 'username=${{ github.repository_owner }}&show_icons=true&count_private=true&line_height=28&hide_border=true&card_width=450&include_all_commits=true&role=owner,collaborator&exclude_repo=github-readme-stats&theme=dark'
+          path: stats-dark
       - uses: actions/upload-artifact@master
         with:
           name: stats-dark
@@ -52,6 +54,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&role=owner,collaborator&theme=default'
           card: 'top-langs'
+          path: top-langs-light
       - uses: actions/upload-artifact@master
         with:
           name: top-langs-light
@@ -70,6 +73,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&role=owner,collaborator&theme=dark&bg_color=000000'
           card: 'top-langs'
+          path: top-langs-dark
       - uses: actions/upload-artifact@master
         with:
           name: top-langs-dark
@@ -86,11 +90,11 @@ jobs:
           path: grs
       - uses: actions/download-artifact@master
         with:
-          name: top-langs-light
+          name: stats-dark
           path: grs
       - uses: actions/download-artifact@master
         with:
-          name: stats-dark
+          name: top-langs-light
           path: grs
       - uses: actions/download-artifact@master
         with:
