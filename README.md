@@ -76,5 +76,15 @@ I'm a Robotics master's student passionate about solving complicated problems an
 <a href="https://www.linkedin.com/in/rickstaa#gh-dark-mode-only">
 <img src="https://img.shields.io/badge/LinkedIn-ffffff?style=for-the-badge&logo=linkedin&logoColor=0690FA#gh-dark-mode-only" alt="Connect with me on linkedin" >
 </a>
+&nbsp;
+<!-- Social button 6 -->
+<!-- Light Mode -->
+<a href="https://app.ens.domains/rickstaa.eth#gh-light-mode-only">
+<img src="https://img.shields.io/badge/rickstaa.eth-3572A5?style=for-the-badge&logo=ethereum&logoColor=white#gh-light-mode-only" alt="Connect with me on linkedin" >
+</a>
+<!-- Dark Mode -->
+<a href="https://app.ens.domains/rickstaa.eth#gh-dark-mode-only">
+<img src="https://img.shields.io/badge/rickstaa.eth-ffffff?style=for-the-badge&logo=ethereum&logoColor=black#gh-dark-mode-only" alt="Connect with me on linkedin" >
+</a>
 
 </div>
