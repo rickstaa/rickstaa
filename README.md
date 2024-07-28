@@ -38,15 +38,25 @@ I'm a Robotics master's student passionate about solving complicated problems an
 &nbsp;
 <!-- Social button 2 -->
 <!-- Light Mode -->
-<a href="https://twitter.com/intent/follow?screen_name=rick_staa#gh-light-mode-only">
-<img src="https://img.shields.io/badge/follow-%40rick_staa-1DA1F2?style=for-the-badge&logo=twitter&labelColor=000&color=3572A5#gh-light-mode-only" alt="Follow me on twitter" >
+<a href="https://warpcast.com/rickstaa.eth#gh-light-mode-only">
+<img src="https://img.shields.io/badge/follow-%40rickstaa-1DA1F2?style=for-the-badge&logo=farcaster&labelColor=000&color=3572A5#gh-light-mode-only" alt="Follow me on twitter" >
 </a>
 <!-- Dark Mode -->
-<a href="https://twitter.com/intent/follow?screen_name=rick_staa#gh-dark-mode-only">
-<img src="https://img.shields.io/badge/follow-%40rick_staa-1DA1F2?style=for-the-badge&logo=twitter&labelColor=000&color=FFF#gh-dark-mode-only" alt="Follow me on twitter" >
+<a href="https://warpcast.com/rickstaa.eth#gh-dark-mode-only">
+<img src="https://img.shields.io/badge/follow-%40rickstaa-1DA1F2?style=for-the-badge&logo=farcaster&labelColor=000&color=FFF#gh-dark-mode-only" alt="Follow me on twitter" >
 </a>
 &nbsp;
 <!-- Social button 3 -->
+<!-- Light Mode -->
+<a href="https://twitter.com/intent/follow?screen_name=rick_staa#gh-light-mode-only">
+<img src="https://img.shields.io/badge/follow-%40rick_staa-1DA1F2?style=for-the-badge&logo=x&labelColor=000&color=3572A5#gh-light-mode-only" alt="Follow me on twitter" >
+</a>
+<!-- Dark Mode -->
+<a href="https://twitter.com/intent/follow?screen_name=rick_staa#gh-dark-mode-only">
+<img src="https://img.shields.io/badge/follow-%40rick_staa-1DA1F2?style=for-the-badge&logo=x&labelColor=000&color=FFF#gh-dark-mode-only" alt="Follow me on twitter" >
+</a>
+&nbsp;
+<!-- Social button 4 -->
 <!-- Light Mode -->
 <a href="https://www.linkedin.com/in/rickstaa#gh-light-mode-only">
 <img src="https://img.shields.io/badge/LinkedIn-3572A5?style=for-the-badge&logo=linkedin&logoColor=white#gh-light-mode-only" alt="Connect with me on linkedin" >
@@ -56,7 +66,7 @@ I'm a Robotics master's student passionate about solving complicated problems an
 <img src="https://img.shields.io/badge/LinkedIn-ffffff?style=for-the-badge&logo=linkedin&logoColor=0690FA#gh-dark-mode-only" alt="Connect with me on linkedin" >
 </a>
 &nbsp;
-<!-- Social button 4 -->
+<!-- Social button 5 -->
 <!-- Light Mode -->
 <a href="https://app.ens.domains/rickstaa.eth#gh-light-mode-only">
 <img src="https://img.shields.io/badge/rickstaa.eth-3572A5?style=for-the-badge&logo=ethereum&logoColor=white#gh-light-mode-only" alt="Connect with me on linkedin" >
