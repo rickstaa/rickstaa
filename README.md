@@ -2,7 +2,7 @@
 
 [![Github](https://img.shields.io/github/followers/rickstaa?label=Follow&style=social)](https://github.com/rickstaa)
 
-Passionate about solving complex problems and building intelligent software solutions 🤖 — currently tackling real-time AI challenges [@Livepeer](https://livepeer.org). I ❤️ Open Source and enjoy contributing to meaningful projects. If you're into open source too, we have [plenty of opportunities](https://www.livepeer.org/dev-hub) [@Livepeer](https://livepeer.org) where you can contribute and earn [bounties](https://livepeer.notion.site/Livepeer-Bounty-Board-13b0a34856878041b9ddecaa1380b2e6).
+Passionate about solving complex problems and building intelligent software solutions 🤖 — currently tackling real-time AI challenges at [Livepeer](https://livepeer.org). I ❤️ Open Source and love contributing to meaningful projects. If you're into open source too, check out [Livepeer’s dev hub](https://www.livepeer.org/dev-hub) — there are plenty of ways to contribute and earn [bounties](https://livepeer.notion.site/Livepeer-Bounty-Board-13b0a34856878041b9ddecaa1380b2e6).
 
 <!-- Light Mode -->
 <div align="center"> 
