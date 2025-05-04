@@ -2,7 +2,7 @@
 
 [![Github](https://img.shields.io/github/followers/rickstaa?label=Follow&style=social)](https://github.com/rickstaa)
 
-I'm a Robotics master's student passionate about solving complicated problems and creating software solutions :robot:. I :heart: Open Source and therefore enjoy working on interesting open source projects.
+Passionate about solving complex problems and building intelligent software solutions 🤖 — currently tackling real-time AI challenges @Livepeer. I ❤️ Open Source and enjoy contributing to meaningful projects. If you're into open source too, we have [plenty of opportunities](https://www.livepeer.org/dev-hub) @Livepeer where you can contribute and earn [bounties](https://livepeer.notion.site/Livepeer-Bounty-Board-13b0a34856878041b9ddecaa1380b2e6).
 
 <!-- Light Mode -->
 <div align="center"> 
