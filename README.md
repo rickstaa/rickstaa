@@ -2,7 +2,7 @@
 
 [![Github](https://img.shields.io/github/followers/rickstaa?label=Follow&style=social)](https://github.com/rickstaa)
 
-Tech, AI, and Robotics enthusiast Passionate about solving complex problems and building intelligent software solutions 🤖 — currently tackling real-time AI challenges at [Livepeer](https://livepeer.org). I ❤️ Open Source and love contributing to meaningful projects.
+Tech, AI, and Robotics enthusiast passionate about solving complex problems and building intelligent software solutions 🤖 — currently tackling real-time AI challenges at [Livepeer](https://livepeer.org). I ❤️ open source and love contributing to meaningful projects.
 
 <!-- Light Mode -->
 <div align="center"> 
