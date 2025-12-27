@@ -4,106 +4,54 @@ on:
   schedule:
   - cron: 0 */4 * * *  # Change to make the action run more or less frequently. Please be aware that GitHub's free plan only has 2000 CI minutes.
 jobs:
-  stats-light:
-    permissions: write-all
+  update-cards:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
-    name: Stats Card (light mode)
+    name: Update cards
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Generate Stats (light mode)
-        uses: Zo-Bro-23/grs-action@main
-        id: generate
+        uses: actions/checkout@v4
+
+      - name: Ensure output folder
+        run: mkdir -p profile
+
+      - name: Generate stats (light mode)
+        uses: readme-tools/github-readme-stats-action@v1
         with:
+          card: stats
+          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&include_all_commits=true&role=owner,collaborator&show=reviews,discussions_answered&rank_icon=percentile&exclude_repo=github-readme-stats&theme=default'
+          path: profile/stats-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          options: 'username=${{ github.repository_owner }}&show_icons=true&count_private=true&line_height=28&hide_border=true&card_width=450&include_all_commits=true&role=owner,collaborator&exclude_repo=github-readme-stats&theme=default'
-          path: stats-light.svg
-      - uses: actions/upload-artifact@master
+
+      - name: Generate stats (dark mode)
+        uses: readme-tools/github-readme-stats-action@v1
         with:
-          name: stats-light
-          path: stats-light.svg
-  stats-dark:
-    permissions: write-all
-    runs-on: ubuntu-latest
-    name: Stats Card (dark mode)
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Generate Stats (mode dark)
-        uses: Zo-Bro-23/grs-action@main
-        id: generate
-        with:
+          card: stats
+          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&include_all_commits=true&role=owner,collaborator&show=reviews,discussions_answered&rank_icon=percentile&exclude_repo=github-readme-stats&theme=dark&bg_color=000000'
+          path: profile/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          options: 'username=${{ github.repository_owner }}&show_icons=true&count_private=true&line_height=28&hide_border=true&card_width=450&include_all_commits=true&role=owner,collaborator&exclude_repo=github-readme-stats&theme=dark'
-          path: stats-dark.svg
-      - uses: actions/upload-artifact@master
+
+      - name: Generate top languages (light mode)
+        uses: readme-tools/github-readme-stats-action@v1
         with:
-          name: stats-dark
-          path: stats-dark.svg
-  top-langs-light:
-    permissions: write-all
-    runs-on: ubuntu-latest
-    name: Top Languages Card (light mode)
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Generate Top Languages (light mode)
-        uses: Zo-Bro-23/grs-action@main
-        id: generate
-        with:
+          card: top-langs
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=12&hide_border=true&role=owner,collaborator&theme=default'
+          path: profile/top-langs-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&role=owner,collaborator&theme=default'
-          card: 'top-langs'
-          path: top-langs-light.svg
-      - uses: actions/upload-artifact@master
+
+      - name: Generate top languages (dark mode)
+        uses: readme-tools/github-readme-stats-action@v1
         with:
-          name: top-langs-light
-          path: top-langs-light.svg
-  top-langs-dark:
-    permissions: write-all
-    runs-on: ubuntu-latest
-    name: Top Languages Card (dark mode)
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Generate Top Languages (dark mode)
-        uses: Zo-Bro-23/grs-action@main
-        id: generate
-        with:
+          card: top-langs
+          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=12&hide_border=true&role=owner,collaborator&theme=dark&bg_color=000000'
+          path: profile/top-langs-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&role=owner,collaborator&theme=dark&bg_color=000000'
-          card: 'top-langs'
-          path: top-langs-dark.svg
-      - uses: actions/upload-artifact@master
-        with:
-          name: top-langs-dark
-          path: top-langs-dark.svg
-  push:
-    permissions: write-all
-    runs-on: ubuntu-latest
-    name: Push
-    needs: [stats-light, stats-dark, top-langs-light, top-langs-dark]
-    steps:
-      - uses: actions/download-artifact@master
-        with:
-          name: stats-light
-          path: grs
-      - uses: actions/download-artifact@master
-        with:
-          name: stats-dark
-          path: grs
-      - uses: actions/download-artifact@master
-        with:
-          name: top-langs-light
-          path: grs
-      - uses: actions/download-artifact@master
-        with:
-          name: top-langs-dark
-          path: grs
-      - name: Push
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: grs
-          build_dir: grs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README cards" || exit 0
+          git push
