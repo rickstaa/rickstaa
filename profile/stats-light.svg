@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Rick Staa's GitHub Stats, Rank: A+</title>
-        <desc id="descId">Total Stars Earned: 1539, Total Commits  : 25208, Total PRs: 2578, Total PRs Reviewed: 117, Total Issues: 989, Total Discussions Answered: 116, Contributed to (last year): 45</desc>
+        <desc id="descId">Total Stars Earned: 1539, Total Commits  : 25211, Total PRs: 2582, Total PRs Reviewed: 117, Total Issues: 993, Total Discussions Answered: 116, Contributed to (last year): 45</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 3.0609448571803957;
+        stroke-dashoffset: 3.060944854932659;
       }
     }
   
@@ -211,7 +211,7 @@
         x="219.01"
         y="12.5"
         data-testid="issues"
-      >989</text>
+      >993</text>
     </g>
   </g><g transform="translate(0, 140)">
     <g class="stagger" style="animation-delay: 1200ms" transform="translate(25, 0)">
