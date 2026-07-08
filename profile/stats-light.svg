@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Rick Staa's GitHub Stats, Rank: A+</title>
-        <desc id="descId">Total Stars Earned: 1576, Total Commits  : 26959, Total PRs: 2680, Total PRs Reviewed: 128, Total Issues: 1041, Total Discussions Answered: 116, Contributed to (last year): 48</desc>
+        <desc id="descId">Total Stars Earned: 1576, Total Commits  : 26959, Total PRs: 2681, Total PRs Reviewed: 128, Total Issues: 1041, Total Discussions Answered: 116, Contributed to (last year): 48</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
