@@ -8,8 +8,8 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Rick Staa's GitHub Stats, Rank: A+</title>
-        <desc id="descId">Total Stars Earned: 1677, Total Commits  : 32378, Total PRs: 2975, Total PRs Reviewed: 169, Total Issues: 1102, Total Discussions Answered: 116, Contributed to (last year): 66</desc>
+        <title id="titleId">Rick Staa&#39;s GitHub Stats, Rank: S</title>
+        <desc id="descId">Total Stars Earned: 2867, Total Commits  : 32378, Total PRs: 2975, Total PRs Reviewed: 169, Total Issues: 1102, Total Discussions Answered: 116, Contributed to (last year): 66</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,11 +73,12 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 2.828240331625388;
+        stroke-dashoffset: 1.8387608246369587;
       }
     }
   
   
+          
 
           
       /* Animations */
@@ -102,9 +103,15 @@
         </style>
 
         
+        <defs>
+          
+          
+        </defs>
+        
 
         <rect
           data-testid="card-bg"
+          class="card-bg"
           x="0.5"
           y="0.5"
           rx="4.5"
@@ -126,7 +133,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >Rick Staa's GitHub Stats</text>
+      >Rick Staa&#39;s GitHub Stats</text>
     </g>
       </g>
     
@@ -148,10 +155,10 @@
       <text class="stat  bold" x="25" y="12.5">Total Stars Earned:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="stars"
-      >1.7k</text>
+      >2.9k</text>
     </g>
   </g><g transform="translate(0, 28)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -163,7 +170,7 @@
       <text class="stat  bold" x="25" y="12.5">Total Commits:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="commits"
       >32.4k</text>
@@ -178,7 +185,7 @@
       <text class="stat  bold" x="25" y="12.5">Total PRs:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="prs"
       >3k</text>
@@ -193,7 +200,7 @@
       <text class="stat  bold" x="25" y="12.5">Total PRs Reviewed:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="reviews"
       >169</text>
@@ -208,7 +215,7 @@
       <text class="stat  bold" x="25" y="12.5">Total Issues:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="issues"
       >1.1k</text>
@@ -223,7 +230,7 @@
       <text class="stat  bold" x="25" y="12.5">Total Discussions Answered:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="discussions_answered"
       >116</text>
@@ -238,7 +245,7 @@
       <text class="stat  bold" x="25" y="12.5">Contributed to (last year):</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="contribs"
       >66</text>
