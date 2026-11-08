@@ -5,14 +5,14 @@
 Tech, AI, and Robotics enthusiast passionate about solving complex problems and building intelligent software solutions 🤖 — currently tackling real-time AI challenges at [Livepeer](https://livepeer.org). I ❤️ open source and love contributing to meaningful projects.
 
 <!-- Light Mode -->
-<a href="https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only">
-<img height=240  src="./profile/stats-light.svg#gh-light-mode-only" alt="Rick Staa's Github stats" />
+<a href="https://github.com/stats-organization/github-stats-extended#gh-light-mode-only">
+<img height=265 src="./profile/stats-light.svg#gh-light-mode-only" alt="Rick Staa's Github stats" />
 </a>
 </div>
 
 <!-- Dark Mode -->
-<a href="https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only">
-<img height=240 src="./profile/stats-dark.svg#gh-dark-mode-only" alt="Rick Staa's Github stats" />
+<a href="https://github.com/stats-organization/github-stats-extended#gh-dark-mode-only">
+<img height=265 src="./profile/stats-dark.svg#gh-dark-mode-only" alt="Rick Staa's Github stats" />
 </a>
 </div>
 

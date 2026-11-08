@@ -17,23 +17,23 @@ jobs:
         run: mkdir -p profile
 
       - name: Generate stats (light mode)
-        uses: readme-tools/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&include_all_commits=true&role=owner,collaborator&show=reviews,discussions_answered&hide_rank=true&exclude_repo=github-readme-stats&theme=default'
+          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&include_all_commits=true&role=owner,collaborator&show=reviews,discussions_answered,all_time_contribs&hide_rank=true&exclude_repo=github-readme-stats&theme=default'
           path: profile/stats-light.svg
           token: ${{ secrets.PAT }}
 
       - name: Generate stats (dark mode)
-        uses: readme-tools/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&include_all_commits=true&role=owner,collaborator&show=reviews,discussions_answered&hide_rank=true&exclude_repo=github-readme-stats&theme=dark&bg_color=000000'
+          options: 'username=${{ github.repository_owner }}&show_icons=true&line_height=28&hide_border=true&card_width=347&include_all_commits=true&role=owner,collaborator&show=reviews,discussions_answered,all_time_contribs&hide_rank=true&exclude_repo=github-readme-stats&theme=dark&bg_color=000000'
           path: profile/stats-dark.svg
           token: ${{ secrets.PAT }}
 
       - name: Generate top languages (light mode)
-        uses: readme-tools/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
           options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=12&hide_border=true&role=owner,collaborator&theme=default'
@@ -41,7 +41,7 @@ jobs:
           token: ${{ secrets.PAT }}
 
       - name: Generate top languages (dark mode)
-        uses: readme-tools/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
           options: 'username=${{ github.repository_owner }}&layout=compact&langs_count=12&hide_border=true&role=owner,collaborator&theme=dark&bg_color=000000'
